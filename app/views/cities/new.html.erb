@@ -1,0 +1,12 @@
+<h1>New City</h1>
+<%= form_for @city do |form| %>
+	City Name:<br>
+	<%= form.text_field :name %> <br>
+	Population: <br>
+	<%= form.number_field :population %>
+	<br>
+  Landmark: <br>
+	<%= form.text_field :landmark %>
+	<br>
+	<%= form.submit "Submit" %>
+<% end %>
